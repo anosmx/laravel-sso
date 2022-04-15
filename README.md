@@ -11,8 +11,8 @@ This Package Fork from https://github.com/zefy/laravel-sso to modify some change
 
 This package based on [Simple PHP SSO skeleton](https://github.com/zefy/php-simple-sso) package and made suitable for Laravel framework.
 ### Requirements
-* Laravel 5.5+
-* PHP 7.1+
+* Laravel 9
+* PHP 8.0+
 
 ### Words meanings
 * ***SSO*** - Single Sign-On.
@@ -27,7 +27,7 @@ Client visits Broker and unique token is generated. When new token is generated 
 ### Server
 Install this package using composer.
 ```shell
-$ composer require ateam-group/laravel-sso
+$ composer require anosmx/laravel-sso
 ```
 
 
@@ -39,7 +39,7 @@ $ php artisan vendor:publish --provider="Zefy\LaravelSSO\SSOServiceProvider"
 
 Create table where all brokers will be saved.
 ```shell
-$ php artisan migrate --path=vendor/zefy/laravel-sso/database/migrations
+$ php artisan migrate --path=vendor/anosmx/laravel-sso/database/migrations
 ```
 
 
@@ -64,7 +64,7 @@ $ php artisan sso:broker:create {name}
 ### Broker
 Install this package using composer.
 ```shell
-$ composer require ateam-group/laravel-sso
+$ composer require anosmx/laravel-sso
 ```
 
 
